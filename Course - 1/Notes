@@ -1,0 +1,126 @@
+What is High level and low level Programming Language?
+1.  High level programming language humans can easily then computer rather then Computer machine for low level
+Programming language it's opposite
+
+Be Consistency
+
+Comments -
+#
+"""  """
+
+Variables (Storage Box) -
+  Not valid variables
+    * 1Var - "Because it starting with digit"
+    * Var@123 - "Because it contains special char"
+    * Var1 value - "Space are not allowed"
+    * Var1-value - "Hyphens are not allowed "
+"Case Sensitive language"
+
+Data Types are - Strings(A - Z, a-Z, 1-9, !@#, with quotes), Integer(0-9 without quotes), Boolean (True or False)
+  How we use "\" in python -
+    * To right new line, we can use \n
+        example -
+          print("This is first line \nThis is second line") #Note - After back slash if any space that will be taken in new line
+
+    * To right space, we can use \t
+        print("This is before space \t it's after space")
+
+    * to right quotes ("") inside string we will use this
+        print("quotes inside quote is \"pradeepa\" ")
+  what is raw string -
+    raw string is used as python prefix to treat "\" as char so not new line char
+
+String Manipulation and typecasting  -
+  print("Hi" * 3) # prints hi three times
+  slicing - if have to print some range in given string we usually use slicing
+  example  -
+      strChar = "Hello World"
+                 012345678910
+      strChar[0:8]
+  String typecasting -
+    Converting given string data to other type is called typecasting
+
+      python only convert from one data type to other -
+        example
+          implicit
+          a,b = 8 9.0
+          c = a + b
+          print(type(a), type(b), type(c)) # now c in float value
+          explcit
+          a = 10
+          b = float(a)
+
+    String Formating  -
+      using + , and f operator
+      strOne = "String1"
+      strTwo = "String2"
+      strOne + "" + strTwo  # Here we can add Manuall space
+      strOne, strTwo #Here we space will explcitly(Programaticlly we can add not manually)
+      f"{String1} {String2}"
+
+    String methods -
+        upper(), lower(), count("chr"), replace("text", "rtext"), len(),
+        strip(it will remove space) rstrip(remove right side space) lstrip(remove left side space)
+        isalnum, isalpha, isdigit, islower, isupper
+
+        example  -
+        strValue = "abc efg"
+        strValue.isalnum() -- False
+        strValue.isalpha() -- False
+        Because it contains a space
+
+
+Data Strucutre -
+  Stroing data in some particluar manner to perform operations
+  1.  list - mutable (we can change) - slower  - index
+    append, insert, del
+  to convert string to list  method called = SPLIT
+  to convert list to string method called = JOIN
+  2.  touple - unmutable (we can change) - faster - index
+  3.  Dictionary - mutable  - slower  -  key
+      key value pair and unorder collection of data
+  4. set -
+      unorder, we cann't change if you want then remove and add :)
+      don't allowed duplicats
+
+Operators -  (+, *, -,...etc)
+  Expression = Oparand(Variable )  Oparator()
+  // - Integer
+  /  - Floating value
+  Compund opartor num1 += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error and debugs -
+
+
+
+1. SyntaxError: f-string: expecting '}'
+
+    Because we can't use doublt string inside a string duble string
+      code snipate  -
+        Before - Error
+            print(f"String concatination using + opr  {strOne + "" + strTwo}")  # Here we can add Manuall space
+        after  - working
+            print(f"String concatination using + opr  {strOne + '' + strTwo}")  # Here we can add Manuall space
+
+2. SyntaxError: EOL while scanning string literal
+      if we are not closing the statement
