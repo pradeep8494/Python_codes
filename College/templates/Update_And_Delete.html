@@ -1,0 +1,23 @@
+<h1>StudentInfo</h1>
+
+<table border="1">
+<thead>
+    <tr>
+    <th>RoleNo</th>
+    <th>name</th>
+    </tr>
+</thead>
+<tbody>
+    {% for val in Student_info1  %}
+    <tr>
+    <td>{{ val.RoleNo }}</td>
+    <td>{{ val.Name }}</td>
+    <td><a href="{% url 'Update_user_list'  val.RoleNo %}">edit</a></td>
+    <td><a href="{% url 'Confirm_delete_list'  val.RoleNo %}">delete</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+
+
+<td><a href="{% url 'Confirm_delete_list'  4 %}">delete</a></td>
